@@ -13,4 +13,4 @@ docker run -it --rm -d \
     postgres:12.2-alpine
 
 docker build -t monappimage .
-winpty docker run -it  --name appcontainer -p 3333:8080  --link postgres1 monappimage
+winpty docker run -it  --name appcontainer  --link postgres1 monappimage
